@@ -13,7 +13,7 @@ function App() {
                 name=""
                 id=""
                 placeholder="Search..."
-                className="m-auto block p-5 rounded-full w-1/4 bg-white bg-opacity-80 placeholder-emerald-600 text-center text-emerald-700 text-xl focus-visible:outline-none"
+                className="m-auto block p-5 rounded-full w-1/4 sm:w-1/2 bg-white bg-opacity-80 placeholder-emerald-600 text-center text-emerald-700 text-xl focus-visible:outline-none"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={(e) => {
@@ -21,7 +21,7 @@ function App() {
                 }}
             />
             {searchResult.main && (
-                <div className="m-auto p-5 rounded-xl w-1/5 mt-0 h-2/4 bg-white bg-opacity-80  text-center focus-visible:outline-none">
+                <div className="m-auto p-5 rounded-xl md:w-1/3 sm:w-1/2 w-1/4 mt-0 h-2/4 bg-white bg-opacity-80  text-center focus-visible:outline-none">
                     <h2 className="text-4xl mb-6">
                         <span>{searchResult.name}</span>
                         <sup className="bg-orange-600 mx-1 px-1 rounded-md text-white">
